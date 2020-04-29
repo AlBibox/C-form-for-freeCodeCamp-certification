@@ -1,0 +1,59 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+body{background: url(sfondo.jpg);background-position: center;background-size: cover; background-repeat: no-repeat;}
+label{display: block; color: #FFF; font-size: 22px; font-weight: 700; margin-bottom: 10px}
+input,select, textarea{display: block; color: #333; font-size: 20px; font-weight: 400; border-style: none; background: #C2C2C2}
+
+
+.container{margin: 50px; display: flex; align-items: flex-start; justify-content: center;}
+
+.container__form{background: rgba(0,0,0,0.83); border-radius: 5px; padding:30px 20px 20px 20px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;}
+
+
+#name{padding: 8px; width: 468px; margin-bottom: 30px; border-radius: 5px}
+#mail{padding: 8px; width: 468px; margin-bottom: 30px; border-radius: 5px}
+#number{padding: 8px; width: 200px; margin-bottom: 30px; border-radius: 5px}
+#dropdown{padding: 8px; width: 468px; margin-bottom: 60px; border-radius: 5px}
+.container__form__radio{margin-bottom: 30px}
+input[type=radio]{display: block; color: #FFF; width: 25px; height: 25px; margin-bottom: 10px; border-style: none;}
+
+.container__form__checkbox{margin-bottom: 30px}
+input[type=checkbox]{display: block; color: #FFF; width: 25px; height: 25px; margin-bottom: 10px; border-style: none;}
+#textarea{padding: 8px; margin-bottom: 60px; border-radius: 5px; width: 468px}
+#submit{padding: 8px 20px 8px 20px; background: #366440; color: #FFF; font-weight: 700; font-size: 22px; border-radius: 5px; margin: auto;}
+
+
+.container__heading{padding-left: 100px}
+#title{margin: 0; font-weight: 500; color: #366440; font-size: 40px}
+#description{margin: 0; font-weight: 400; color: #000; font-size: 26px}
+
+
+input[value~="YES"]::before{content: "Yes"; padding-left: 40px; position: relative; top: 3px}
+input[value~="NO"]::before{content: "No"; padding-left: 40px; position: relative; top: 3px}
+
+input[value~="Smartphone"]::before{content: "Smartphone"; padding-left: 40px; position: relative; top: 3px;}
+input[value~="SmartTV"]::before{content: "Smart\00a0TV"; padding-left: 40px; position: relative; top: 3px; }
+input[value~="PC"]::before{content: "PC"; padding-left: 40px; position: relative; top: 3px; }
+
+@media only screen and (max-device-width: 768px) {
+.container{flex-direction: column-reverse;}
+.container__heading{padding-left: 0px; margin-bottom: 50px}
+}
+@media only screen and (max-device-width: 600px){
+
+label{ font-size: 15px;}
+input,select, textarea{font-size: 14px;}
+
+.container{margin: 10px}
+.container__form{padding:30px 10px 20px 10px}
+#name{padding: 8px; width: 280px; margin-bottom: 30px; border-radius: 5px}
+#mail{padding: 8px; width: 280px; margin-bottom: 30px; border-radius: 5px}
+#number{padding: 8px; width: 200px; margin-bottom: 30px; border-radius: 5px}
+#dropdown{padding: 8px; width: 280px; margin-bottom: 60px; border-radius: 5px}
+#textarea{width: 280px}
+#submit{padding: 6px 10px 6px 10px;font-size: 18px;}
+
+#title{font-size: 30px}
+#description{font-size: 22px}
+
+}

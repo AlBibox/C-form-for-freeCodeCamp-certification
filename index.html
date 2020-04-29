@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <form class="container__form" action="index.html" method="post" id="survey-form">
+      <div class="container__form__text">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="* Enter your name" required>
+      </div>
+      <div class="container__form__mail">
+        <label id="email-label" for="mail">Email</label>
+        <input id="email" type="email" name="mail" placeholder="* Enter your mail" required>
+      </div>
+      <div class="container__form__number">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" name="age" placeholder="* Enter your age" required min="0" max="200">
+      </div>
+      <div class="container__form__select">
+        <label id="dropdown-label" for="dropdown">Sexual orientation</label>
+        <select id="dropdown">
+          <option value="" ></option>
+          <option value="">Bisexual</option>
+          <option value="">Heterosexual</option>
+          <option value="">Omoseual</option>
+        </select>
+      </div>
+      <div class="container__form__radio">
+        <label for="radio">Do you like technology?</label>
+        <input type="radio" name="radio" value="YES">
+        <input type="radio" name="radio" value="NO">
+      </div>
+      <div class="container__form__checkbox">
+        <label>Wich of these technology do you use?</label>
+        <input type="checkbox" value="Smartphone">
+        <input type="checkbox" value="SmartTV">
+        <input type="checkbox" value="PC">
+      </div>
+      <div class="container__form__textarea">
+        <label id="" for="textarea">Tell us something interesting about you</label>
+        <textarea name="textarea" id="textarea" rows="8" cols="43" placeholder="* Enter your message here"></textarea>
+      </div>
+      <input type="submit" id="submit" value="SEND">
+    </form>
+    <div class="container__heading">
+      <h1 id="title">FREECODECAMP SURVEY FORM</h1>
+      <p id="description">Complete the form</p>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
